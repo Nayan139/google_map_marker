@@ -25,3 +25,10 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@layer components {
+  .header {
+    @apply p-4 bg-gray-700/50 rounded-lg max-w-[300px];
+  }
+  
+}

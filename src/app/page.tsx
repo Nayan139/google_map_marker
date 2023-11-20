@@ -2,7 +2,8 @@ import GoogleMap from "@/components/GoogleMap";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="bg-red ">
+      tjkwhrtwkrh
       <GoogleMap />
     </main>
   );

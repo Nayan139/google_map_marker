@@ -15,7 +15,6 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const session = await getServerSession(authOptions);
-  console.log("session :>> ", session);
   return (
     <html lang="en">
       <body className={inter.className}>
@@ -23,7 +22,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           {!session ? (
             <Login />
           ) : (
-            <div className="bg-[#565869] flex-1 ">{children}</div>
+            <div className="bg-[#d3b894]">{children}</div>
           )}
         </SessionProvider>
       </body>
