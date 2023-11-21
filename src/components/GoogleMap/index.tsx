@@ -63,7 +63,9 @@ function GoogleMap() {
       ];
       //Set data into the local state
       setMarkerData(() =>
-        pinnedData.length ? [...pinnedData] : [{ lat: 12.97, lng: 77.59 }]
+        pinnedData.length
+          ? [{ lat: 12.97, lng: 77.59 }, ...pinnedData]
+          : [{ lat: 12.97, lng: 77.59 }]
       );
     } catch (error) {
       console.error("error :>> ", error);
