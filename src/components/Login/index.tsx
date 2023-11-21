@@ -6,7 +6,7 @@ import React from "react";
 const Login = () => {
   return (
     <div className="h-screen w-screen flex cursor-pointer flex-col items-center justify-center text-center bg-[#2bae66c2]">
-      <Image src="/mapPin.png" height={150} width={150} alt="logo" />
+      <Image src="/mapPin.png" height={120} width={120} alt="logo" />
       <div
         onClick={() => {
           signIn("google");
