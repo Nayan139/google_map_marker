@@ -1,9 +1,10 @@
+import Header from "@/components/Header";
 import GoogleMap from "@/components/GoogleMap";
 
 export default function Home() {
   return (
-    <main className="bg-red ">
-      tjkwhrtwkrh
+    <main className="text-white">
+      <Header />
       <GoogleMap />
     </main>
   );

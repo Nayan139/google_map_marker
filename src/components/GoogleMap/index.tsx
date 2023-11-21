@@ -51,6 +51,7 @@ function GoogleMap() {
    */
   const fetchMapMarker = async () => {
     try {
+      //Get the data from the firestore
       const querySnapshot = await getDocs(
         query(
           collection(db, "users", session?.user?.email!, "map_markers"),
@@ -60,6 +61,7 @@ function GoogleMap() {
       const pinnedData: { lat: number; lng: number }[] = [
         ...querySnapshot.docs.map((doc) => doc?.data()?.Location),
       ];
+      //Set data into the local state
       setMarkerData(() =>
         pinnedData.length ? [...pinnedData] : [{ lat: 12.97, lng: 77.59 }]
       );

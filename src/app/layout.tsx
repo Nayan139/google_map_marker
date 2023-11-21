@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
+import { Inter } from "next/font/google";
 import { getServerSession } from "next-auth";
 import { authOptions } from "./api/auth/[...nextauth]/route";
 import SessionProvider from "@/provider/sessionProvider";
 import Login from "@/components/Login";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +22,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           {!session ? (
             <Login />
           ) : (
-            <div className="bg-[#d3b894]">{children}</div>
+            <div className="bg-[#2bae66c2]">{children}</div>
           )}
         </SessionProvider>
       </body>
